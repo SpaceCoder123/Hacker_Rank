@@ -1,5 +1,4 @@
-Highest_Scores={}
-Lowest_Scores={}
+
 x=int(input())
 Score=list(map(int,input().split()))
 
