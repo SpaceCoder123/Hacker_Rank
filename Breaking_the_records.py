@@ -20,8 +20,4 @@ for i in range(x):
         elif Score[i]<Lowest:
             Lowest_Scores[i]=Score[i]
             Lowest=Score[i]
-
-        
-
-
 print(len(Highest_Scores)-1,len((Lowest_Scores))-1)
