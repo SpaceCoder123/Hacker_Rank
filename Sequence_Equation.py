@@ -1,11 +1,27 @@
-x=int(input())
-Given=list(map(int,input().split()))
-m={}
-for i in range(1,x+1):
-    m[i-1]=Given[i-1]+1
+#!/bin/python3
 
-print(m)
+import math
+import os
+import random
+import re
+import sys
 
+# Complete the permutationEquation function below.
+def permutationEquation(p):
+    return [(p.index(p.index(i)+1)+1) for i in range(1, max(p)+1)]
 
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input())
+
+    p = list(map(int, input().rstrip().split()))
+
+    result = permutationEquation(p)
+
+    fptr.write('\n'.join(map(str, result)))
+    fptr.write('\n')
+
+    fptr.close()
 
     
