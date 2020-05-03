@@ -12,8 +12,7 @@ if Year_Diff==0:
         elif Day_Diff<=0:
             print(0)
     elif Month_Diff>0:
-        if Month_Diff>0:
-            print(500*(Month_Diff))
+        print(500*(Month_Diff))
     elif Month_Diff<0:
         print(0)
 elif Year_Diff>0:
